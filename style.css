@@ -1,0 +1,88 @@
+*{
+    font-family: monospace
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+input{
+    width: 28%;
+    background-color: #EDEEF0;
+    color: #C7C8CC;
+    border-radius: 20px;
+    padding: 10px;
+}
+.add{
+    background-color: rgb(98, 236, 98);
+    border-radius: 50%;
+    padding: 10px;
+    transition: 0.1s linear ;
+    cursor: pointer;
+    border: 1px solid rgb(98, 236, 98);
+    color: #000;
+    position: absolute;
+    left: 61vw;
+    top: 11vh;
+}
+button i{
+    font-size: 18px;
+    font-weight: bold;
+}
+ul{
+   list-style: none;
+   margin-left: 32vw;
+}
+li{
+    width: 44%;
+    background-color: #EDEEF0;
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 1vh;
+    padding: 10px;
+    padding-left: 0px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+li span{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.delete i{
+    border: 1px solid #EDEEF0;
+}
+input:focus{
+    color: #000;
+    /* font-size: 16px; */
+}
+.checkbox{
+    width: 20px;
+    height: 20px;
+    accent-color: green;
+    cursor: pointer;
+}
+@media (max-width:375px) {
+    input{
+        width: 80%;
+    }
+    .add{
+        left: 82vw;
+        top: 10.4vh;
+    }
+    ul{
+        margin-left: 0;
+        margin-top: 4vh;
+    }
+    li{
+        width: 90%;
+        padding: 10px;
+        border-radius: 20px;
+        margin-bottom: 2vh;
+    }
+}
